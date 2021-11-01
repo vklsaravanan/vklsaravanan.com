@@ -1,0 +1,61 @@
+/*there is linked with *wbdp_03-LINKS.html* file
+    here set linked text color and unvisited color text
+    visited like that..,
+*/
+body{
+    padding-top: 25px;
+    text-align: center;
+}
+a:any-link {
+    color: rgb(228, 0, 0);
+    border-radius: 25px ;
+    background: white;
+    padding: 3px;
+    padding-inline: 10px;
+    padding-block: 0px;
+    
+    text-decoration: transparent;
+}
+a:visited{
+    color: yellowgreen;
+    background:no-repeat;
+}
+/*
+hower is use for react text when move curson on the object */
+a:hover{
+    color:darkturquoise;
+    border: rgb(2, 0, 90) solid ;
+    border-radius: 25px ;
+    padding-inline: 20px;
+
+}
+a:active{
+    color:black;
+    border-style: dotted;
+}
+button{
+    color: white;
+    background-color: brown;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    border-style: ridge;
+
+}
+button:hover{
+    
+    color: black;
+    background-color: chartreuse;
+    
+    
+}
+button:focus{
+    background-color: darkgreen;
+
+    
+}
+
+
+p{
+    color: white;
+    
+}
