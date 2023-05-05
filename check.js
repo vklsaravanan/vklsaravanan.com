@@ -1,13 +1,11 @@
-var a=document.getElementById(
-"journey-div"
-)
+var a=document.getElementById("journey-div")
 var b=0;
 var journeys=[
     {
         year:"2002",
         month:"Feb",
         image:"https://img.icons8.com/ios-filled/1x/birth-date.png",
-        title:"Born cute Little boy",
+        title:"Born Little boy",
         desc:""
     },
     {
@@ -78,4 +76,3 @@ function journeyAdder(){
     this.a.insertAdjacentHTML("afterend",journey);
 }
 let intervalJourney=setInterval(journeyAdder,1000);
-
