@@ -9,19 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Saravanan R</title>
     <link rel="stylesheet" href="style.css">
-    <script src="check.js" defer></script>
+    <script src="assets/jquery/jquery-3.6.4.min.js"></script>
+    <script src="scripts/journeyAdder.js" defer></script>
 </head>
 <body>
     <div id="nav-bar">
-        <p>SaravananRaja</p>
-        <div id="menuList">
-                <a class="active" href="#">Home</a>
-                <a href="projects.html">Projects</a>
+        <div>
+            <p>SaravananRaja</p>
+        </div>
+        <div id="menuList" class="menus menus-sm">
+            <a class="active" href="#">Home</a>
+            <a href="projects.html">Projects</a>
                 <a href="#">Contact</a>
                 <a href="#">About</a> 
         </div>
-        <button><img src="menu.png" id="menu-btn" alt="menu"></button>
+        <button><img src="assets/tools/menu.png" id="menu-btn" alt="menu"></button>
     </div>
+          
 
     <div id="main-content">
         <div class="profile-card">
@@ -30,7 +34,7 @@
                 <p id="name" class="title">Saravanan Raja</p>
                 <p class="description f-siez-20">Current senior at the VSB Engineering Collage studying Electronics and Communication Engineering with career interests in Web Developing, Drawing and music.</p>
             </span>
-            <span class="profile-span"><img src="profilePicture.png" id="profilePic" alt="profile picture"></span>
+            <span class="profile-span"><img src="assets/tools/profilePicture.png" id="profilePic" alt="profile picture"></span>
             <span>
                 <pre>| Html | css | Javascript | Java | Ember JS |</pre>
                 <p class="description f-siez-20">my knowledge include the aforementioned,
@@ -44,6 +48,7 @@
         <div  id=journey-div>
             <h1>Journey</h1>
         </div>
+        <script src="scripts/action.js"></script>
     </div>
 </body>
 </html>

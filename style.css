@@ -1,9 +1,10 @@
 body{
     background-color: #151a21;
     margin: 0px;
+
 }
 a{
-    text-decoration: none;
+    text-decoration: none; 
 }
 p{
     color:white;
@@ -13,7 +14,7 @@ p{
 *{
     color: white;
     border: rgba(0, 57, 97, 0) 2px solid;
-    font-family:Raleway,sans-serif ;
+    font-family:"Raleway",sans-serif ;
 }
 
 td{
@@ -48,18 +49,7 @@ tr{
     background-color: transparent;
     filter: invert(1);
 }
-@media (max-width: 768px) {
-    #menuList{
-        flex-direction: column;
-        display: none;
-    }
-    #menuList>a{
-        display: block;
-    }
-    #nav-bar > button{
-        display: block;
-    }
-}
+
 #menuList>a{
     transition: .2s;
     line-height: 50px;
@@ -73,13 +63,36 @@ tr{
     font-weight: 600;
     color: red;
 }
-#menuList{
+.menus{
     width: 400px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     height: 100%;
     align-items: center;
+}
+@media (max-width: 768px) {
+    .menus{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 50%;
+        top: 0%;
+        background-color: #16141c;
+        height: auto;
+        width: 90%;
+        transform: translateX(-50%);
+        box-shadow: 0px 10px 20px #ffffff1f;
+        border-radius: 20px;
+    
+    }
+    #nav-bar > button{
+        display: block;
+    }
+}
+.menu-btn-toggle{
+    display:flex;
 }
 #menuList>.active{ 
     color: red;
