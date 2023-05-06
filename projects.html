@@ -13,14 +13,20 @@
 </head>
 <body>
     <div id="nav-bar">
-        <p>SaravananRaja</p>
-        <div id="menuList">
-                <a  href="index.html">Home</a>
-                <a href="#" class="active">Projects</a>
+        <div>
+            <p>SaravananRaja</p>
+        </div>
+        <div id="menuList" transition=".4s" class="menus menus-sm">
+            <a  href="index.html">Home</a>
+            <a  class="active" href="#">Projects</a>
                 <a href="#">Contact</a>
                 <a href="#">About</a> 
         </div>
-        <button><img src="menu.png" id="menu-btn" alt="menu"></button>
+        <button transition=".5s" id="menu-btn" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 
     <div id="main-content">

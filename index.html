@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Saravanan R</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/nav-bar.css">
     <script src="assets/jquery/jquery-3.6.4.min.js"></script>
     <script src="scripts/journeyAdder.js" defer></script>
 </head>
@@ -17,13 +18,17 @@
         <div>
             <p>SaravananRaja</p>
         </div>
-        <div id="menuList" class="menus menus-sm">
+        <div id="menuList" transition=".4s" class="menus menus-sm">
             <a class="active" href="#">Home</a>
             <a href="projects.html">Projects</a>
                 <a href="#">Contact</a>
                 <a href="#">About</a> 
         </div>
-        <button><img src="assets/tools/menu.png" id="menu-btn" alt="menu"></button>
+        <button transition=".5s" id="menu-btn" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
           
 
