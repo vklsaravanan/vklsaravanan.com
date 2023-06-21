@@ -75,5 +75,5 @@ function journeyAdder(){
     }
     this.a.insertAdjacentHTML("afterend",journey);
 }
-let intervalJourney=setInterval(journeyAdder,1000);
+let intervalJourney=setInterval(journeyAdder,10);
 
