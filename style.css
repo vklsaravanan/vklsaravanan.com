@@ -10,11 +10,13 @@ p{
     color:white;
     padding: 0px;
     margin: 0px;
+    pointer-events: none;
 }
 *{
     color: white;
     border: rgba(0, 57, 97, 0) 2px solid;
     font-family:"Raleway",sans-serif ;
+    font-size: 17px;
 }
 
 td{
@@ -61,7 +63,7 @@ tr{
     transition: .2s;
 }
 .description{
-    color: rgb(116, 116, 116);
+    color: rgb(136, 136, 136);
     letter-spacing: .5px;
      
 }
@@ -70,7 +72,7 @@ tr{
 }
 
 .f-siez-20{
-    font-size: 20px;
+    font-size: 18px;
 }
 span{
     margin: 5px;
@@ -126,11 +128,41 @@ span{
         width: 90%;
     }
   }
-  /* ---------------journey div-------------- */
+/*--------------------- mid -con -------------*/
+#mid-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#states{
+    padding-inline: 10vw;
+    width: 350px;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex; 
+}
+#states>img{
+    width: 90%
+}
+
+
+/*--------------- journey div --------------*/
+#journeys{
+    display:flex;
+    flex-direction: column;
+}
 
   #journey-card{
     transition: .5s;
     display: flex;
+  }
+  #journey-card>span{
+    /* width:130px; */
+  }
+  
+  #journey-card > span > p{
+    font-size: 15px;
   }
   #journey-card>span>img{
     width: 20px;
@@ -138,10 +170,8 @@ span{
   }
   .journey-line{
     background-color: red;
-    
     height: 100% ;
     width: .1px;
-    
   }
 
 .moveTransition{
@@ -173,6 +203,11 @@ span{
         opacity: 100%;
     }
 }
+/* -------------states---------------------- */
+#states{
+    display: flex;
+    flex-direction: column;
+}
 /* ------------footer ------------------- */
 footer{
     transition: .5s;
@@ -181,10 +216,10 @@ footer{
     width: 100%;
     border-top: 1.3px rgba(128, 128, 128, 0.375) solid;
 }
-.footer-img>img{
+.footer-img>a>img{
     filter: saturate(20%); 
 }
-.footer-img>img:hover{
+.footer-img>a>img:hover{
     filter: saturate(100%);
     box-shadow: white solid 0px 0px 10px;
     transition: .5s;

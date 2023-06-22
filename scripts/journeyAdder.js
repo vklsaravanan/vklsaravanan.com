@@ -12,7 +12,7 @@ var journeys=[
         year:"2017",
         month:"Feb",
         image:"https://img.icons8.com/glyph-neue/256/school-building.png",
-        title:"Complete 11th standard studies",
+        title:"Complete 10th standard studies",
         desc:"Arignar anna government Hr.sec School"
     },
     {
@@ -39,14 +39,14 @@ var journeys=[
     {
         year:"2023",
         month:"Feb",
-        image:"https://img.icons8.com/ios-filled/256/manager.png",
+        image:"https://cdn.icon-icons.com/icons2/2596/PNG/512/bye_icon_155703.png",
         title:"Say bye to Project Trainee",
         desc:"ZOHO Corporation chennai"
     },
     {
         year:"2023",
         month:"Mar",
-        image:"https://img.icons8.com/ios-filled/256/manager.png",
+        image:"https://cdn-icons-png.flaticon.com/128/1390/1390354.png",
         title:"Start my own project",
         desc:"Application"
     },
