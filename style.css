@@ -100,11 +100,60 @@ span{
     color: black;
 
 }
+
+
+/* CSS */
+.button-52 {
+    margin: 6px;
+  font-size: 16px;
+  font-weight: 600;   
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  color:black;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: rgb(206, 190, 16);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+
+
+
+
 #profilePic{
     -webkit-filter: brightness(2);
     -webkit-filter: contrast(.3);
     -webkit-filter: saturate(2);
     /* border-radius: 30px; */
+    -webkit-user-drag: none;
+    user-select: none;
 }   
 @media (max-width: 1000px) 
 {
