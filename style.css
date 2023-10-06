@@ -86,21 +86,6 @@ span{
     flex-direction: column;
     width: 20vw;
 }
-#download-resume{
-    transition: .4s;
-    background-color: transparent;
-    border: 2px yellow solid;
-    padding: 5px;
-    padding-inline: 40px
-    
-}
-#download-resume:hover{
-    transition: .4s;
-    background-color: yellow;
-    color: black;
-
-}
-
 
 /* CSS */
 .button-52 {
@@ -154,6 +139,7 @@ span{
     /* border-radius: 30px; */
     -webkit-user-drag: none;
     user-select: none;
+    
 }   
 @media (max-width: 1000px) 
 {
