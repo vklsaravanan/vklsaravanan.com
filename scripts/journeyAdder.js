@@ -61,7 +61,7 @@ function journeyAdder(){
     let journey=journeyCreater(year,month,image,title,desc)
     function journeyCreater(year,month,image,title,desc){
 
-    return `<div id="journey-card" class="moveTransition">
+    return `<div class="moveTransition journey-card">
         <span>
             <p>`+year+`</p>
             <p class="description">`+month+`</p>
@@ -75,5 +75,5 @@ function journeyAdder(){
     }
     this.a.insertAdjacentHTML("afterend",journey);
 }
-let intervalJourney=setInterval(journeyAdder,10);
+let intervalJourney=setInterval(journeyAdder,100);
 
