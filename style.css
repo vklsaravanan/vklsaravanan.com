@@ -14,7 +14,7 @@ p{
 }
 *{
     color: white;
-    border: rgba(0, 57, 97, 0) 2px solid;
+   
     font-family:"Raleway",sans-serif ;
     font-size: 17px;
 }
@@ -40,6 +40,7 @@ tr{
     width: 100%;
     border-bottom: 2px rgba(255, 255, 255, 0.186) solid;
     /* justify-content: center; */
+   
     justify-content: space-around   ;
 }
 .title{
@@ -50,10 +51,11 @@ tr{
     letter-spacing: 4.5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
-  
+    text-wrap: nowrap;
     width: 600px;
-    color: rgb(206, 190, 16);
+    color: rgb(219, 237, 23);
     animation: fade-in 2s;
+    margin: 0px;
 }
 .title::first-letter{
     font-family:   sans-serif;
@@ -130,14 +132,16 @@ span{
   
   .button-17:hover {
     transition: .3s;
-    background: #F6F9FE;
-    color: #174ea6;
+    background: #dde1e825;
+    color: #c9ec2c;  
+    margin-inline: 10%; 
+    border-radius: 2px;
     background-size: 100%;
+    box-shadow: 0 4px 4px 0 rgba(247, 247, 247, 0.796), 0 8px 12px 6px rgb(60 64 67 / 15%);
 
   }
   
   .button-17:active {
-    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
     outline: none;
   }
   
@@ -185,14 +189,23 @@ span{
     #mid-con{
         justify-content: center;
     }
+    .profile-card>span:nth-child(3){
+        text-align:right;
+    }
+    
 }
 @media (max-width: 680px) {
     #name-card{
-        width: 100%;
+        width:90vw;
     }
-    #name{
+    .my-name{
         width: 100%;
-        font-size: 40px;
+        font-size: 60px;
+        text-wrap: wrap;
+        text-align: center;
+    }
+    .my-name ~ .description{ 
+        text-align:center;
     }
     .profile-card>span:nth-child(3){
         display: flex;
@@ -200,6 +213,7 @@ span{
         align-items: center;
         flex-direction: column;
         width: 90%;
+        text-align: center; 
     }
   }
 /*--------------------- mid -con -------------*/
@@ -208,6 +222,7 @@ span{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    border: rgba(0, 57, 97, 0) 10px solid;
 }
 
 #states{
@@ -299,5 +314,57 @@ footer{
     box-shadow: white solid 0px 0px 10px;
     transition: .5s;
 }
+/* ------------------- name styles----------------------------- */
+.comingsoon-loading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+    -webkit-filter: drop-shadow(2px 2px black);
+  }
+  
+  .comingsoon-loading h1 {
+    position: absolute;
+    color: #01000000;
+    font-size: 40px; 
+  }
+  
+  .comingsoon-loading h1::before { 
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgb(221, 247, 25);
+    border-right: 2px solid rgb(219, 236, 31);
+    overflow: hidden; 
+    animation: animate 8s steps(14, end);  
+    width: 100%;
+    white-space: nowrap; 
+  }
+  
+  /* animation to fill text */
+  
+  @keyframes animate {
+    0%,
+    10%{
+      width: 0;
+    }
+    50%,
+    100% {
+      width: 100%;
+    }
+  }
+
 /* ------------------- project page styles----------------------------- */
 
+.typed-cursor {
+    font-size: 50px;
+    color: #c9ec2c;
+} 

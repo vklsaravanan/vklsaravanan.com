@@ -11,10 +11,13 @@
     <meta name="description" content="Passionate Full Stack Developer with expertise in web development. Explore my portfolio for innovative projects, showcasing proficiency in HTML, CSS, JavaScript, and more. Let's build something amazing together!">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/nav-bar.css">
+    <link rel="stylesheet" href="styles/prograss-bar.css">
     <script src="assets/jquery/jquery-3.6.4.min.js"></script>
     <script src="scripts/journeyAdder.js" defer></script>
+    <script src="scripts/prograss-bar.js" defer></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3287070572417360"
      crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
     <div id="nav-bar">
@@ -33,13 +36,18 @@
             <span></span>
         </button>
     </div>
+    <!-- prograss bar -->
+    <div class="progress-container fixed-top">
+        <span class="progress-bar"></span>
+      </div>
+    
           
 
     <div id="main-content">
         <div class="profile-card">
             <span id="name-card">
                 <p class="description f-siez-20 im">I'm</p>
-                <p id="name" class="title">Saravanan Raja</p>
+                <span class="title my-name" id="name"></span>
                 <p class="description f-siez-20">A 2023 graduate in ECE from VSB Engineering College, With a strong skill set in software development. knowledge spans various programming languages and frameworks.</p>
             </span>
             <span class="profile-span"><img src="assets/tools/profilePicture.png" id="profilePic" alt="profile picture"></span>
