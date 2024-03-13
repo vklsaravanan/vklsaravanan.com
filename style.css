@@ -180,7 +180,10 @@ span{
     -webkit-user-drag: none;
     user-select: none;
     
-}   
+}
+.profile-span{
+    margin: 0px;
+}
 @media (max-width: 1000px) 
 {
     .profile-card>span:nth-child(3){
